@@ -1,0 +1,190 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* Ensure containers fit within viewport width */
+.container, .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
+  max-width: 100%; /* Ensure containers do not exceed viewport width */
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-md-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header Section */
+.header-section {
+  position: relative;
+  height: 100vh;
+  background: url('/Images/hero-image.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-section {
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-section .guest-house {
+  color: #ffb400;
+  font-size: 3.5rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background: #ffb400;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: #ff9900;
+}
+
+/* Navbar Custom Styling */
+.navbar-custom {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.navbar-custom .brand-text {
+  font-size: 1.25rem; /* Adjusted font size for better fit */
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+.navbar-custom .brand-text img {
+  margin-right: 5px; /* Reduced margin */
+}
+
+.navbar-custom .brand-text:hover {
+  color: #ffb400; /* Hover color */
+}
+
+.navbar-custom .navbar-toggler {
+  border: none;
+  background: transparent;
+  font-size: 1.25rem; /* Adjusted font size */
+  color: #000;
+}
+
+.navbar-custom .nav-link-custom {
+  font-size: 1rem; /* Increased font size for better visibility */
+  margin: 0 0.75rem; /* Increased margin */
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link-custom::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffb400;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.navbar-custom .nav-link-custom:hover::before {
+  transform: translateX(0);
+}
+
+.navbar-custom .nav-link-custom:hover {
+  color: #ffb400 !important;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 0.5rem; /* Reduced padding */
+    flex-direction: column;
+    align-items: stretch; /* Ensure full width */
+  }
+
+  .navbar-custom .nav-link-custom {
+    font-size: 1rem; /* Increased font size for mobile */
+    margin: 0.5rem 0; /* Adjusted margin */
+  }
+
+  .navbar-custom .brand-text {
+    font-size: 1.25rem; /* Adjusted brand text size for mobile */
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+
+  .hero-section p {
+    font-size: 0.9rem; /* Adjusted font size for mobile */
+  }
+
+  .cta-button {
+    font-size: 0.8rem; /* Adjusted font size for mobile */
+    padding: 6px 12px; /* Adjusted padding for mobile */
+  }
+}
+
+/* Ensure content visibility */
+main {
+  padding-top: 70px; /* Ensures content doesn't overlap with fixed navbar */
+  box-sizing: border-box; /* Ensure padding doesn’t affect content width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}

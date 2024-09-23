@@ -1,0 +1,55 @@
+/* Global styles */
+:root {
+  --primary-color: #e82574;
+  --text-grey: #78716c;
+  --white: #ffffff;
+  --footer-bg: #0c0a09;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer container */
+.footer-container {
+  background-color: var(--footer-bg);
+  padding: 20px 40px; /* Add space from the screen edges */
+}
+
+/* Footer heading styles */
+.footer-heading {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+/* Footer text and link styles */
+.footer-text {
+  color: var(--text-grey);
+}
+
+a.footer-link {
+  text-decoration: none;
+  color: var(--text-grey); /* Set link color to grey */
+}
+
+a.footer-link:hover {
+  color: var(--white); /* Change link color to white on hover */
+}
+
+/* Social icons */
+.social-icons a {
+  margin-right: 15px; /* Add spacing between icons */
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+}

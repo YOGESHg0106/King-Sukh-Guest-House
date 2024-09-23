@@ -1,0 +1,161 @@
+/* Base styling for the service section */
+.service {
+  position: relative;
+  height: 65vh; /* Reduced height */
+  background-image: url('./Images/service-bg.webp'); /* Apply your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px; /* Reduced padding */
+}
+
+.service__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* Main content box */
+.service__container {
+  background-color: white;
+  padding: 30px; /* Reduced padding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 900px;
+  z-index: 2;
+}
+
+/* Content and headings */
+.service__content {
+  text-align: center;
+}
+
+.section__subheader {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.line-before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px; /* Reduced bottom margin */
+  font-weight: bold;
+}
+
+/* Service list styling */
+.service__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px; /* Adjusted gap */
+  flex-wrap: nowrap; /* Cards in the same line */
+}
+
+.service__list li {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service__list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for icons */
+.service__list li:nth-child(1) i {
+  color: #ff00d9; /* Yellow */
+}
+.service__list li:nth-child(2) i {
+  color: #22a026; /* Green */
+}
+.service__list li:nth-child(3) i {
+  color: #1d7ac5; /* Blue */
+}
+.service__list li:nth-child(4) i {
+  color: #f3120b; /* Orange */
+}
+
+.service__list li span {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.service__list li i {
+  font-size: 3rem;
+}
+
+.service__list li:hover i {
+  color: #ff9900; /* Hover color */
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .service__list {
+    flex-wrap: wrap; /* Allow wrapping for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .service__list {
+    gap: 10px; /* Smaller gap */
+  }
+
+  .service__list li {
+    width: 180px; /* Slightly smaller cards */
+    padding: 15px; /* Reduced padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    height: auto; /* Auto height for small screens */
+    padding: 35px; /* Reduced padding */
+  }
+
+  .service__list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .service__list li {
+    width: 100%;
+    max-width: 300px; /* Maximum width for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section__subheader {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .section__header {
+    font-size: 2rem; /* Smaller font size */
+  }
+
+  .service__list li {
+    width: 80%; /* Full width */
+    max-width: 280px; /* Maximum width for very small screens */
+  }
+}

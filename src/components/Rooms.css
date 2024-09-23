@@ -1,0 +1,106 @@
+/* Rooms Section Styles */
+#rooms {
+    padding: 10px; /* Reduced padding to remove extra space */
+    background-color: #f9f9f9;
+    text-align: center; /* Centers the title and content */
+  }
+  
+  .rooms-title {
+    position: relative;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: inline-block; /* Inline block ensures the title and line align properly */
+    padding-bottom: 10px; /* Space between the title and the line */
+  }
+  
+  .rooms-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust the width of the line */
+    height: 5px;
+    background-color: #ffb400; /* Yellow line */
+    z-index: -1; /* Behind the text */
+    transition: background-color 0.3s ease, width 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .rooms-title:hover::after {
+    background-color: #ff1500; /* Change to a darker yellow on hover */
+    width: 200px; /* Increase the width of the line on hover */
+  }
+  
+  /* Rooms Heading */
+  .rooms-heading {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card-img-top {
+    height: 250px; /* Uniform image height */
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card .btn-primary {
+    margin-top: auto;
+    background-color: #ffb400;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn-primary:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .rooms-title {
+      font-size: 2rem;
+    }
+  
+    .card-img-top {
+      height: 200px; /* Adjust image height for mobile */
+    }
+    .card:hover,
+    .card:active {
+    transform: none; /* Disable lift effect on smaller screens to avoid layout jumps */
+  }
+}
+  

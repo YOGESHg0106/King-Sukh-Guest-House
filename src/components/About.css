@@ -1,0 +1,125 @@
+/* About Section Styles */
+.about-section {
+    padding: 60px 0; /* Keep a consistent padding */
+    margin: 0 auto; /* Center the section */
+    max-width: 1200px; /* Limit the width of the section */
+}
+
+.about-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    position: relative; /* Ensure the pseudo-element aligns properly */
+    padding-left: 30px; /* Space for the line */
+}
+
+.about-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px; /* Length of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: #ffb400; /* Yellow color */
+    transform: translateY(-50%); /* Center the line vertically */
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-address {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about-image {
+    width: 60%; /* Adjust the image width */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: #ffb400;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #ff9900;
+}
+
+/* Reset unwanted body and html margins */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-image {
+        width: 80%; /* Adjust size for mobile */
+    }
+
+    .about-heading {
+        font-size: 2rem; /* Adjust heading size for mobile */
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Adjust button size for mobile */
+        padding: 8px 16px; /* Adjust button padding for mobile */
+    }
+}

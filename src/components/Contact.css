@@ -1,0 +1,232 @@
+.section1 {
+  padding: 60px 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 0 5%;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contactInfo1 {
+  background-color: #ffcc00;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  width: 45%; /* Adjust for larger screens */
+  z-index: 2;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: left; /* Ensure text aligns left */
+}
+
+.contactInfo1 h2 {
+  font-size: 2rem; /* Adjust font size for better readability */
+  margin-bottom: 20px;
+}
+
+.contactInfo1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo1 ul li {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 15px; /* Adjusted for better spacing */
+}
+
+.contactInfo1 ul li img {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+}
+
+.contactInfo1 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sci {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* Adjusted for better alignment */
+}
+
+.sci img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.sci img:hover {
+  transform: scale(1.1);
+}
+
+.contactForm1 {
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%; /* Adjusted width for larger screens */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm1 h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.formBox1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 15px; /* Adjusted gap for better spacing */
+}
+
+.inputBox1 {
+  position: relative;
+  margin-bottom: 10px; /* Added some space between input fields */
+  width: 100%;
+}
+
+.inputBox1 input,
+.inputBox1 textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding for smaller input fields */
+  font-size: 0.875rem; /* Reduced font size */
+  border: 1px solid #ccccccd2;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputBox1 input:focus,
+.inputBox1 textarea:focus {
+  border-color: #ffcc00;
+}
+
+.inputBox1 input::placeholder,
+.inputBox1 textarea::placeholder {
+  color: #999;
+  font-size: 0.75rem;
+}
+
+textarea {
+  height: 60px; /* Reduced height for textarea */
+}
+
+input[type="submit"] {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff9900;
+}
+
+/* Make last input (textarea) span full width */
+.inputBox1:nth-child(5) {
+  grid-column: span 2; /* Make this span both columns */
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 992px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contactInfo1,
+  .contactForm1 {
+    width: 80%; /* Adjust for tablet view */
+  }
+
+  .sci {
+    justify-content: center; /* Center social icons on smaller screens */
+  }
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 10px; /* Adjust margin for small screens */
+  }
+
+  .contactInfo1,
+  .contactForm1 {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .contactInfo1 {
+    padding: 20px; /* Reduced padding for mobile */
+    text-align: center; /* Center align the text */
+  }
+
+  .contactForm1 {
+    padding: 20px; /* Reduced padding */
+  }
+
+  .inputBox1 {
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 10px; /* Spacing between input fields */
+  }
+
+  .sci {
+    justify-content: center;
+  }
+
+  /* Maintain grid layout for inputs on mobile but adjust sizing */
+  .formBox1 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  /* Reduce size of inputs and submit button for mobile */
+  .inputBox1 input,
+  .inputBox1 textarea {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+
+  input[type="submit"] {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactInfo1 h2,
+  .contactForm1 h2 {
+    font-size: 1.6rem; /* Smaller font for headings */
+  }
+
+  .contactInfo1 ul li img,
+  .sci img {
+    width: 24px; /* Smaller icons for extra small screens */
+    height: 24px;
+  }
+
+  .inputBox1 input,
+  .inputBox1 textarea {
+    padding: 5px; /* Smaller padding for inputs */
+  }
+
+  input[type="submit"] {
+    padding: 6px 12px; /* Smaller submit button */
+  }
+}
