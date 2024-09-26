@@ -7,7 +7,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Router>
+  <Router basename="/King-Sukh-Guest-House/">
     <AuthProvider>
       <App />
     </AuthProvider>
