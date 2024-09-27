@@ -33,7 +33,7 @@ const Signup = () => {
         setShowSuccess(true);
         setLoading(false);
         setTimeout(() => {
-          navigate("/login"); // Redirect to login after signup
+          navigate("/King-Sukh-Guest-House/login"); // Redirect to login after signup
         }, 1500);
       } else {
         const error = await response.json();
@@ -98,7 +98,8 @@ const Signup = () => {
 
           <div className="form-footer mt-3">
             <p>
-              Already have an account? <a href="/login">Login</a>
+              Already have an account?{" "}
+              <a href="/King-Sukh-Guest-House/login">Login</a>
             </p>
           </div>
         </Form>

@@ -10,7 +10,10 @@ const ContactUs = () => {
           <h2>Contact Info</h2>
           <ul>
             <li>
-              <img src="/Social-icons/location.png" alt="location" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/location.png`}
+                alt="location"
+              />
               <span>
                 Beside Barshal Water Tank, Manpur, Barhanti,
                 <br />
@@ -18,13 +21,19 @@ const ContactUs = () => {
               </span>
             </li>
             <li>
-              <img src="/Social-icons/mail.png" alt="mail" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/mail.png`}
+                alt="mail"
+              />
               <span>
                 <a href="mailto:kkghosh0099@gmail.com">kkghosh0099@gmail.com</a>
               </span>
             </li>
             <li>
-              <img src="/Social-icons/call.png" alt="call" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/call.png`}
+                alt="call"
+              />
               <span>
                 <a href="tel:+919007062180">+91 9007062180</a>
               </span>
@@ -37,28 +46,40 @@ const ContactUs = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/Social-icons/youtube.png" alt="YouTube" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/youtube.png`}
+                alt="YouTube"
+              />
             </a>
             <a
               href="https://www.instagram.com/kingsukhguesthouse/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/Social-icons/instagram.png" alt="Instagram" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/instagram.png`}
+                alt="Instagram"
+              />
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/Social-icons/facebook.png" alt="Facebook" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/facebook.png`}
+                alt="Facebook"
+              />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/Social-icons/twitter.png" alt="Twitter" />
+              <img
+                src={`${import.meta.env.BASE_URL}/Social-icons/twitter.png`}
+                alt="Twitter"
+              />
             </a>
           </div>
         </div>

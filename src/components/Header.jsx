@@ -26,7 +26,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="#home" className="brand-text">
             <img
-              src="/Images/navbar-image.png"
+              src={`${import.meta.env.BASE_URL}/Images/navbar-image.png`}
               alt="King Sukh Logo"
               width="40"
               height="40"
@@ -65,7 +65,7 @@ const Header = () => {
                 <Button
                   variant="outline-primary"
                   className="ms-2"
-                  href="/login"
+                  href="/King-Sukh-Guest-House/login"
                 >
                   Login
                 </Button>

@@ -6,7 +6,7 @@ const rooms = [
   {
     id: 1,
     name: "Spacious Serenity Suite",
-    img: "/Images/OurRoom_1.jpg",
+    img: `${import.meta.env.BASE_URL}/Images/OurRoom_1.jpg`,
     description:
       "Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.",
     price: "Starting from Rs. 1500/night",
@@ -14,7 +14,7 @@ const rooms = [
   {
     id: 2,
     name: "Cozy Haven Room",
-    img: "/Images/OurRoom_2.jpg",
+    img: `${import.meta.env.BASE_URL}/Images/OurRoom_2.jpg`,
     description:
       "Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.",
     price: "Starting from Rs. 1000/night",
@@ -22,7 +22,7 @@ const rooms = [
   {
     id: 3,
     name: "Single Room",
-    img: "/Images/OurRoom_3.jpg",
+    img: `${import.meta.env.BASE_URL}/Images/OurRoom_3.jpg`,
     description:
       "Experience luxury in our Single Room, where comfort meets elegance.",
     price: "Starting from Rs. 800/night",

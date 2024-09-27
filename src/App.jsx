@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom"; // Removed BrowserRouter as Router
+import { Routes, Route } from "react-router-dom"; // Removed Router import
 import Header from "./components/Header";
 import About from "./components/About";
 import Rooms from "./components/Rooms";
@@ -21,7 +21,6 @@ const App = () => {
 
   return (
     <AuthProvider>
-      {/* Removed Router here */}
       <Routes>
         <Route
           path="/"

@@ -33,7 +33,7 @@ const About = () => {
           <Col md={6} data-aos="fade-left">
             <div className="about-image-container">
               <img
-                src="/Images/About.jpg" // Ensure the correct path for your image
+                src={`${import.meta.env.BASE_URL}Images/About.jpg`}
                 alt="About King Sukh"
                 className="about-image img-fluid"
               />

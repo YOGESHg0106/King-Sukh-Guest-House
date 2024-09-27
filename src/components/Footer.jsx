@@ -97,7 +97,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/Social-icons/facebook.png"
+                  src={`${import.meta.env.BASE_URL}/Social-icons/facebook.png`}
                   alt="Facebook"
                   width="30"
                   height="30"
@@ -109,7 +109,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/Social-icons/instagram.png"
+                  src={`${import.meta.env.BASE_URL}/Social-icons/instagram.png`}
                   alt="Instagram"
                   width="30"
                   height="30"
@@ -121,7 +121,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/Social-icons/youtube.png"
+                  src={`${import.meta.env.BASE_URL}/Social-icons/youtube.png`}
                   alt="YouTube"
                   width="30"
                   height="30"
@@ -133,7 +133,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/Social-icons/twitter.png"
+                  src={`${import.meta.env.BASE_URL}/Social-icons/twitter.png`}
                   alt="Twitter"
                   width="30"
                   height="30"

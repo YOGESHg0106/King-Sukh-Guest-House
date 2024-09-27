@@ -2,7 +2,7 @@
 .service {
   position: relative;
   height: 65vh; /* Reduced height */
-  background-image: url('./Images/service-bg.webp'); /* Apply your background image */
+  background-image: url('https://yogeshg0106.github.io/King-Sukh-Guest-House/Images/service-bg.webp'); /* Apply your background image */
   background-size: cover;
   background-position: center;
   display: flex;

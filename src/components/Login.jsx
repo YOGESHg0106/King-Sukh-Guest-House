@@ -36,7 +36,7 @@ const Login = () => {
           setShowSuccess(true);
           setLoading(false);
           setTimeout(() => {
-            navigate("/"); // Redirect to home after login
+            navigate("/King-Sukh-Guest-House/"); // Redirect to home after login
           }, 1500);
         } else {
           setErrorMessage("Invalid response from server.");
@@ -95,7 +95,8 @@ const Login = () => {
 
           <div className="form-footer mt-3">
             <p>
-              Don't have an account? <a href="/signup">Sign up</a>
+              Don't have an account?{" "}
+              <a href="/King-Sukh-Guest-House/signup">Sign up</a>
             </p>
           </div>
         </Form>
