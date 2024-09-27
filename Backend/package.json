@@ -1,10 +1,9 @@
 {
-  "name": "backend",
+  "name": "king-sukh-guest-house-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "Backend/server.js",
   "scripts": {
-    "start": "node ./Backend/server.js",
-    "build": "vite build"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
