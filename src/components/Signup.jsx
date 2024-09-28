@@ -22,11 +22,15 @@ const Signup = () => {
     const data = { name, email, password };
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://king-sukh-backend.onrender.com/api/auth/signup",
+        {
+          // Deployed backend URL
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();

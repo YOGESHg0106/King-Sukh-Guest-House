@@ -1,5 +1,3 @@
-// backend/server.js
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -8,8 +6,16 @@ require("dotenv").config();
 
 const app = express();
 
+// CORS configuration - Allow only the frontend URL
+app.use(
+  cors({
+    origin: "https://king-sukh-frontend.onrender.com", // Replace with your frontend's deployed URL
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+    credentials: true, // Allow cookies and authentication
+  })
+);
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
