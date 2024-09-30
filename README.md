@@ -6,7 +6,7 @@ Welcome to the **King Sukh Guest House** project! This website provides an intui
 
 ## 🚀 Live Preview
 
-🎉 **Check out the live website here**: [King Sukh Guest House](https://king-sukh-frontend.onrender.com)
+🎉 **Check out the live website here**: [King Sukh Guest House](https://yogeshg0106.github.io/King-Sukh-Guest-House/)
 
 ---
 
